@@ -1,0 +1,23 @@
+int dis=2;
+void setup () {
+  size (600,600);
+  noStroke ();
+ // background (0);
+}
+
+void draw () {
+    background (0);
+  for (int star=1; star<=610; star=star+15){
+    for (int stary=1; stary <=610; stary=stary+15){
+      for (int cua=3; cua<60; cua=cua*2){
+
+    stroke(random(255,0),random(0,255),30);
+   line(mouseX, mouseY, stary, star);
+     fill(0,random(100,255),0);
+     noStroke();
+    ellipse (star,stary,5,5);
+
+      }
+    }
+  }
+}
